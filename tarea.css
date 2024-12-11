@@ -1,0 +1,206 @@
+.contenedor{
+    display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.contenedor_izq{
+    display: flex;         
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 20px; 
+    justify-content: space-between;
+}
+
+.contenedor_sup{
+    display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  border-top: medium solid white ;
+  border-left: medium solid white;
+  border-right: medium solid white;
+}
+
+.contenedor_inf{
+    display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  border-bottom: medium solid white ;
+  border-left: medium solid white;
+  border-right: medium solid white;
+}
+
+.contenedor1{
+    display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.contenedor1 img {
+    position: static;
+    opacity: 0;
+    animation: alternar 16s infinite;
+}
+
+
+.contenedor1 img:nth-child(1) {
+    animation-delay: 3s;
+}
+
+.contenedor1 img:nth-child(2) {
+    animation-delay: 6s;
+}
+
+.contenedor1 img:nth-child(3) {
+    animation-delay: 9s;
+}
+
+.contenedor1 img:nth-child(4) {
+    animation-delay: 12s;
+}
+@keyframes alternar {
+    0%, 24% {
+        opacity: 1; 
+    }
+    25%, 49% {
+        opacity: 1; 
+    }
+    50%, 74% {
+        opacity: 1; 
+    }
+    75%, 100% {
+        opacity: 0; 
+    }
+}
+  
+.contenedor1:hover img {
+    animation-play-state: paused;
+}
+
+.texto-hover {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.contenedor1:hover .texto-hover {
+    opacity: 1;
+}
+
+.texto{
+    flex: 1; 
+  font-size: 18px; 
+  color: white
+}
+
+.imagen{
+    width: 22%; 
+  height: 200px; 
+}
+
+body {
+    width: 95vw; 
+    height: 100vh; 
+    background-image: url('fotos/Fondo.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: 'Arial', sans-serif; 
+}
+
+h1{
+    text-decoration: underline double red;
+    color:red;
+    text-align: center;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: '*';
+    color: white; 
+    font-size: 40px;                                                 
+}
+
+ul li{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline white;
+}
+
+img{
+    height: 20vh;
+    width: 20vw;
+    margin-right: 20px; 
+}
+
+h2{color: white;
+}
+
+.henry{
+    color: orange
+}
+
+.afton{
+    color:purple
+}
+
+.acto{
+    color: red;
+    text-decoration: underline wavy red;
+}
+
+.subrayado{
+    text-decoration: underline white;
+}
+
+p{
+    color:white;
+    font-size: large;
+}
+
+.matar{
+    color:rgb(133, 0, 0)
+}
+
+.fgs{
+    color: rgb(255, 255, 80)
+}
+
+.funtime{
+    color:#cf38dd
+}
+
+.baby{
+    color:rgb(43, 214, 43)
+}
+
+.freddy{
+    color:rgb(41, 1, 1)
+}
+
+.bonnie{
+    color:blue
+}
+
+.chica{
+    color:yellow
+}
+
+.foxy{
+    color:red
+}
