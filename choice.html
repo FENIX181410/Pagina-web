@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Escoge</title>
+    <link rel="stylesheet" href="../static/css/tarea.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="{{ url_for('misiones', var1=var1, var2=var2, var3=True) }}">
+            <h2>Presiona para que se te asignen misiones automáticamente</h2>
+            </a> 
+        </li>
+        <li>    
+            <a href="{{ url_for('misiones', var1=var1, var2=var2, var3=False) }}">
+            <h2>Presiona para crear tus propias misiones</h2>
+            </a> 
+        </li>
+    </ul>         
+</body>

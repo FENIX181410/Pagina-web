@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Biomas</title>
+    <link rel="stylesheet" href="../static/css/tarea.css">
+</head>
+<body>
+    <h1>Escoja el bioma</h1>
+    <ul class="list">
+        <li class="list__item">
+          <a href="{{ url_for('choice', var1=var1, var2='Bosque') }}">
+          <img class="item__img" src="../static/img/bosque.webp" >
+          <span>Bosque</span></a>
+        </li>
+        <li class="list__item">
+            <a href="{{ url_for('choice', var1=var1, var2='Desierto') }}">
+            <img class="item__img" src="../static/img/desierto.webp" >
+            <span>Desierto</span></a>
+        </li>
+        <li class="list__item">
+            <a href="{{ url_for('choice', var1=var1, var2='End') }}">
+            <img class="item__img" src="../static/img/end.png" >
+            <span>End</span></a>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="list__item">
+            <a href="{{ url_for('choice', var1=var1, var2='Nether') }}">
+            <img class="item__img" src="../static/img/nether.webp" >
+            <span>Nether</span></a>
+        </li>
+        <li class="list__item">
+            <a href="{{ url_for('choice', var1=var1, var2='Nieve') }}">
+            <img class="item__img" src="../static/img/nieve.webp" >
+            <span>Nieve</span></a>
+        </li>
+        <li class="list__item">
+            <a href="{{ url_for('choice', var1=var1, var2='Oceano') }}">
+            <img class="item__img" src="../static/img/oceano.webp" >
+            <span>Oceano</span></a>
+        </li>
+    </ul>
+</body>
+</html>
